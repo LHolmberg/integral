@@ -77,7 +77,7 @@ double func(string input)
 			return pow(func(tok.substr(0, i)), func(tok.substr(i + 1, tok.length() - i - 1))); // använder pow(x,y) för att "upphöja" x med y.
 		}
 	}
-	return stod(tok.c_str()); // returnerar den uträknade funktionen
+	return stod(tok.c_str()); // returnerar den uträknade funktionen som en double variabel (konverterar från en string till double)
 }
 
 int main()
